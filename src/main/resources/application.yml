@@ -1,0 +1,44 @@
+#spring:
+#  datasource:
+#    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+#    url: ${mysql.url:jdbc:mysql://localhost:3306/angularspringbootecommerce?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true}
+#    username: "root"
+#    password: "telefonn12"
+#  jpa:
+#    show-sql: true
+#    properties:
+#      hibernate.dialect: org.hibernate.dialect.SQLServerDialect
+#    hibernate:
+#      ddl-auto: update
+#stripe:
+#  secret-key: sk_test_51NiZKsLtTFoBOb8wTg4V2C3bJqrQ53qMHLusPXct6hp0O3yNtHXfEITKl7bLHNPRG7Egk28A5d1X7H4yoCvUl5kF00OP3VpgCr
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: testproba4200@gmail.com
+    password: qleqmtvkdleoxije
+    properties:
+      mail:
+        transport:
+          protocol: smtp
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+#        debug: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${mysql.url:jdbc:mysql://localhost:3306/angularspringbootecommerce?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true}
+    username: "root"
+    password: "telefonn12"
+  jpa:
+    show-sql: true
+    properties:
+      hibernate.dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+stripe:
+  secret-key: sk_test_51OC4yrAWv3GmAlJdwulu5aihJ5fbFlzCIPDK8m4UFeACVWGb7AwtOdCpLrX66PdWsaMLMW1k21YtJ88QDLA8Bp1U00TwubyhAP
+
